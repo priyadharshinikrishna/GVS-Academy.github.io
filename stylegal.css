@@ -1,0 +1,196 @@
+/* Custom CSS to make the navbar transparent */
+.navbar {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Make navbar solid on scroll */
+.navbar.scrolled {
+    background: #2f2a44; /* Darker on scroll */
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Navbar Brand Logo */
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-fixed {
+    background-image: url('../images/poses/bg2.avif'); /* Replace with your image */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.bg-fixed::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); /* Optional overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+/*Pictures section*/
+.scroll-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  animation: scroll 40s linear infinite;
+  padding-bottom: 10px;
+}
+
+.gallery::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 4px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Responsive tweaks */
+@media (max-width: 768px) {
+    .gallery {
+      gap: 10px;
+      animation: scroll 60s linear infinite; /* slower scroll on small devices */
+    }
+  
+    .gallery img {
+      max-width: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery img {
+      max-width: 100px;
+    }
+  }
+  /*Staff gallery*/
+  .img-card {
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .img-card img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .img-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .img-card:hover img {
+    transform: scale(1.1);
+  }
+  
+  
+/* Footer Styling */
+.footer {
+   
+    background-color: #2d2b3a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+.footer h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.footer p, .footer a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+.bottom-bar {
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+/* Scroll to Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f5a9b8;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.scroll-top i {
+    color: white;
+    font-size: 20px;
+}

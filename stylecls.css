@@ -1,0 +1,110 @@
+/* Custom CSS to make the navbar transparent */
+.navbar {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Make navbar solid on scroll */
+.navbar.scrolled {
+    background: #2f2a44; /* Darker on scroll */
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Navbar Brand Logo */
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+/*Card section*/
+.card {
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .yoga-card-img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .instructor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .instructor img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+/* Footer Styling */
+.footer {
+   
+    background-color: #2d2b3a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+.footer h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.footer p, .footer a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+.bottom-bar {
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+/* Scroll to Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f5a9b8;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.scroll-top i {
+    color: white;
+    font-size: 20px;
+}

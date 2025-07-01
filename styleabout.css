@@ -1,0 +1,184 @@
+/* Custom CSS to make the navbar transparent */
+.navbar {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Make navbar solid on scroll */
+.navbar.scrolled {
+    background: #2f2a44; /* Darker on scroll */
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Navbar Brand Logo */
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.carousel-caption-custom {
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  
+.carousel-container {
+    width: 100%;
+    height: 100vh;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 20px;
+    padding-bottom: 1px;
+    position: relative;
+    z-index: 1;
+}
+.carousel-item img {
+    max-height: 100vh; /* Keep images within a limit */
+    object-fit: cover; /* Make sure images are cropped properly */
+}
+/* Shrink effect on scroll */
+.carousel-container.shrink {
+    max-height: 250px;
+}
+
+/*About Section*/
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 140px !important; /* Remove Extra Space */
+    padding-top: 20px;
+    background: #f9f9f9;
+}
+.about-section .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When element is visible */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Section styling */
+.about-section {
+    padding-top: 0px;
+    background: #f9f9f9;
+}
+
+.about-section img {
+    border-radius: 10px;
+    width: 300px;
+    height: 350px;
+}
+
+/*Stats section*/
+.stats-section {
+    margin-top: 100px;
+    background: white; /* Set background color */
+    color: #2f2a44; /* Light pink text color */
+}
+
+.counter {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+/*Review*/
+body {
+    font-family: 'Times New Roman', serif;
+}
+.testimonial-box {
+    text-align: justify;
+    padding: 20px;
+}
+.testimonial-box p {
+    font-size: 16px;
+    color: #444;
+}
+.testimonial-box h5 {
+    font-weight: bold;
+    color: #1a1a3b;
+}
+.testimonial-box small {
+    color: gray;
+}
+.carousel-inner {
+    display: flex;
+}
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer Styling */
+.footer {
+   
+    background-color: #2d2b3a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+.footer h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.footer p, .footer a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+.bottom-bar {
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+/* Scroll to Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f5a9b8;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.scroll-top i {
+    color: white;
+    font-size: 20px;
+}

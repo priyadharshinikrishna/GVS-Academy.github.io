@@ -1,0 +1,278 @@
+/* Custom CSS to make the navbar transparent */
+.navbar {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    transition: background 0.3s ease-in-out;
+}
+
+/* Make navbar solid on scroll */
+.navbar.scrolled {
+    background: #2f2a44; /* Darker on scroll */
+}
+
+/* Navbar link styles */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Navbar Brand Logo */
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*HERO SECTION*/
+.hero-section {
+    background: url('../images/whitebg.png') no-repeat center center/cover;
+    position: relative;
+    padding: 30px 0;
+    min-height: 90vh;
+}
+
+/* Overlay effect */
+.hero-section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+.hero-text-container {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color */
+    border-radius: 8px; /* Optional: to round the corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: to give a shadow effect */
+}
+
+
+/* Text Styling */
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.hero-buttons a {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-buttons a:hover {
+    background-color: #0056b3;
+}
+.hero-buttons .btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+.hero-buttons .btn:hover {
+    background: #1d192f;
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+ /* Custom Styles */
+ .welcome-section {
+    position: relative;
+    z-index: 2; /* Ensure it's above the carousel */
+    padding: 80px 0;
+}
+.welcome-text {
+    text-align: justify;
+}
+.welcome-text h2 {
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+/*About Section*/
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px !important; /* Remove Extra Space */
+    padding-top: 10px;
+    background: #f9f9f9;
+
+}
+.about-section .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Fade-in effect */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* When element is visible */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Section styling */
+.about-section {
+    padding-top: 20px;
+    background: #f9f9f9;
+}
+
+.about-section img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+/* Feature Box */
+.feature-box {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.feature-box.light {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.feature-box.selected {
+    border: 2px solid #E3B8B6;
+    background: #2C233D;
+    color: white;
+}
+.feature-box .icon {
+    background: #E3B8B6;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+}
+.feature-box:hover {
+    background-color: #1d192f; /* Light blue */
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.2);
+}
+.feature-box:hover h4 {
+    color: #fff;
+}
+.feature-box:hover p {
+    color: #fff;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2C233D;
+    position: relative;
+}
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #E3B8B6;
+    display: block;
+    margin: 8px auto 0;
+}
+
+/* Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.trainer-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+.trainer-card:hover img {
+    transform: scale(1.1);
+}
+.trainer-card {
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.trainer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.trainer-card h5 {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.trainer-card p {
+    color: #666;
+}
+/* Footer Styling */
+.footer {
+   
+    background-color: #2d2b3a;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+.footer h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.footer p, .footer a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+.bottom-bar {
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
+/* Scroll to Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f5a9b8;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.scroll-top i {
+    color: white;
+    font-size: 20px;
+}
